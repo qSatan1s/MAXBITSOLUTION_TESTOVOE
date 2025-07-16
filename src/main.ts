@@ -1,13 +1,17 @@
 import { PiniaColada } from '@pinia/colada'
 import { createPinia } from 'pinia'
 import { createApp } from 'vue'
-import { router } from '@/router'
-import App from './App.vue'
-import './style.css'
+import App from '@/App.vue'
+import router from './router'
+import './styles/style.scss'
 
 const app = createApp(App)
-app.use(createPinia())
-app.use(PiniaColada, {})
+
+const pinia = createPinia()
+app.use(pinia)
+
+app.use(PiniaColada)
+
 app.use(router)
 
 app.mount('#app')
