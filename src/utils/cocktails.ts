@@ -13,7 +13,7 @@ export function extractIngredients(cocktail: Cocktail): Ingredient[] {
     if (name && name.trim()) {
       ingredients.push({
         name: name.trim(),
-        measure: measure?.trim() || null,
+        measure: measure?.trim(),
       })
     }
   }
@@ -27,8 +27,8 @@ export function isValidCocktailCode(code: string): code is CocktailCode {
 }
 
 export function getCocktailSearchUrl(code: CocktailCode): string {
-  const baseUrl
-      = import.meta.env.VITE_API_BASE_URL
-        || 'https://www.thecocktaildb.com/api/json/v1/1'
+  const baseUrl =
+    import.meta.env.VITE_API_BASE_URL ||
+    'https://www.thecocktaildb.com/api/json/v1/1'
   return `${baseUrl}/search.php?s=${code}`
 }

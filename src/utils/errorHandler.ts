@@ -20,6 +20,5 @@ export function logError(error: APIError, context?: string): void {
   console.error(logMessage, {
     status: error.status,
     code: error.code,
-    stack: error.stack,
   })
 }
