@@ -1,6 +1,6 @@
 # 🍹 Cocktail
 
-[![Demo]()
+[![Demo](https://img.shields.io/badge/Demo-Live-success?style=flat-square)](https://maxbitsolution-testovoe.vercel.app/)
 [![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen?style=flat-square)](https://github.com/qSatan1s/MAXBITSOLUTION_TESTOVOE)
 [![Vue](https://img.shields.io/badge/Vue-3.5.17-4FC08D?style=flat-square&logo=vue.js)](https://vuejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8.3-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
